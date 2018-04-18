@@ -1,0 +1,188 @@
+#Maintained by: RehabMan for: Laptop Patches
+#battery_Gigabyte-AERO15X.txt
+
+# created by goofyliu 2016-01-07
+
+# works for:
+#  Gigabyte P35Xv3
+
+into device label ECDV code_regex B1DC,\s+16, replace_matched begin ZDC0,8,ZDC1,8, end;
+into device label ECDV code_regex B1FC,\s+16, replace_matched begin ZFC0,8,ZFC1,8, end;
+into device label ECDV code_regex B1RC,\s+16, replace_matched begin ZRC0,8,ZRC1,8, end;
+into device label ECDV code_regex B1FV,\s+16, replace_matched begin ZFV0,8,ZFV1,8, end;
+
+into device label ECDV code_regex CAPW,\s+16, replace_matched begin ZPW0,8,ZPW1,8, end;
+into device label ECDV code_regex CAPL,\s+16, replace_matched begin ZPL0,8,ZPL1,8, end;
+
+into device label ECDV code_regex BGR1,\s+16, replace_matched begin ZR10,8,ZR11,8, end;
+into device label ECDV code_regex BGR2,\s+16, replace_matched begin ZR20,8,ZR21,8, end;
+into device label ECDV code_regex BTEM,\s+16, replace_matched begin ZEM0,8,ZEM1,8, end;
+into device label ECDV code_regex BRMT,\s+16, replace_matched begin ZMT0,8,ZEMT,8, end;
+into device label ECDV code_regex B1DG,\s+16, replace_matched begin ZDG0,8,ZDG1,8, end;
+into device label ECDV code_regex B1CR,\s+16, replace_matched begin ZCR0,8,ZCR1,8, end;
+into device label ECDV code_regex RPM1,\s+16, replace_matched begin RPMX,8,RPMY,8, end;
+into device label ECDV code_regex RPM2,\s+16 replace_matched begin RMPX,8,RMPY,8 end;
+
+into device label ECDV code_regex OIN1,\s+16, replace_matched begin ZN10,8,ZN11,8, end;
+into device label ECDV code_regex OIN2,\s+16, replace_matched begin ZN20,8,ZN21,8, end;
+
+into device label ECDV code_regex SER1,\s+16, replace_matched begin SERX,8,SERY,8, end;
+into device label ECDV code_regex SER2,\s+16, replace_matched begin SREX,8,SREY,8, end;
+
+into device label ECDV code_regex BTY1,\s+16, replace_matched begin BTYX,8,BTYY,8, end;
+into device label ECDV code_regex BTY2,\s+16, replace_matched begin BYTX,8,BYTY,8, end;
+
+into device label ECDV code_regex NWLF,\s+16, replace_matched begin ZLF0,8,ZLF1,8, end;
+
+into device label ECDV code_regex BMD1,\s+16, replace_matched begin BMDX,8,BMDY,8, end;
+into device label ECDV code_regex BMD2,\s+16, replace_matched begin BDMX,8,BDMY,8, end;
+
+into device label ECDV code_regex LFCC,\s+16, replace_matched begin ZCC0,8,ZCC1,8, end;
+
+into device label ECDV code_regex RMCA,\s+16, replace_matched begin ZCA0,8,ZCA1,8, end;
+
+
+into device label ECDV code_regex LSDA,\s+16, replace_matched begin ZDA0,8,ZDA1,8, end;
+
+into device label ECDV code_regex BMOD,\s+16, replace_matched begin ZOD0,8,ZOD1,8, end;
+
+into device label ECDV code_regex RMTP,\s+16, replace_matched begin ZTP0,8,ZTP1,8, end;
+
+into device label ECDV code_regex DSCC,\s+16, replace_matched begin ZSCX,8,ZSCY,8, end;
+
+into device label BATR code_regex DSCC,\s+16, replace_matched begin ZTR0,8,ZTR1,8, end;
+
+into device label ECDV code_regex LFC1,\s+16, replace_matched begin LFCX,8,LFCY,8, end;
+
+into device label ECDV code_regex LFC2,\s+16, replace_matched begin LCFX,8,LCFY,8, end;
+
+into device label ECDV code_regex TEMT,\s+16, replace_matched begin ZMT0,8,ZMT1,8, end;
+
+into device label ECDV code_regex PRSN,\s+16, replace_matched begin ZSN0,8,ZSN1,8, end;
+
+into device label ECDV code_regex CA10,\s+16, replace_matched begin CA1X,8,CA1Y,8, end;
+
+into device label ECDV code_regex CA20,\s+16, replace_matched begin CA2X,8,CA2Y,8, end;
+
+into device label ECDV code_regex CA30,\s+16, replace_matched begin CA3X,8,CA3Y,8, end;
+
+into device label ECDV code_regex CA40,\s+16, replace_matched begin CA4X,8,CA4Y,8, end;
+
+into device label ECDV code_regex CA50,\s+16, replace_matched begin CA5X,8,CA5Y,8, end;
+
+into device label ECDV code_regex CA60,\s+16, replace_matched begin CA6X,8,CA6Y,8, end;
+
+into device label ECDV code_regex CA80,\s+16, replace_matched begin CA8X,8,CA8Y,8, end;
+
+into device label ECDV code_regex CA95,\s+16, replace_matched begin CA9X,8,CA9Y,8, end;
+
+into device label ECDV code_regex CA99,\s+16, replace_matched begin ZA9X,8,ZA2Y,8, end;
+
+into device label ECDV code_regex CA15,\s+16, replace_matched begin ZA1X,8,ZA1Y,8, end;
+
+into device label ECDV code_regex LUXV,\s+16, replace_matched begin ZXV0,8,ZXV1,8, end;
+
+into device label ECDV code_regex LUXN,\s+16, replace_matched begin ZXN0,8,ZXN1,8, end;
+
+into device label ECDV code_regex MCNT,\s+16, replace_matched begin ZNT0,8,ZNT1,8, end;
+
+into device label ECDV code_regex TBF2,\s+16, replace_matched begin ZBFX,8,ZBFY,8, end;
+
+into device label ECDV code_regex XFN1,\s+16, replace_matched begin XFNX,8,XFNY,8, end;
+
+into device label ECDV code_regex PORD,\s+16, replace_matched begin ZRD0,8,ZRD1,8, end;
+
+into device label ECDV code_regex CHGV,\s+16, replace_matched begin ZGV0,8,ZGV1,8, end;
+
+into device label ECDV code_regex CHGC,\s+16, replace_matched begin ZGC0,8,ZGC1,8, end;
+
+into device label ECDV code_regex INCU,\s+16, replace_matched begin ZCU0,8,ZCU1,8, end;
+
+into device label ECDV code_regex BOP1,\s+16, replace_matched begin BOPX,8,BOPY,8, end;
+
+into device label ECDV code_regex BOP2,\s+16, replace_matched begin BPOX,8,BPOY,8, end;
+
+into device label ECDV code_regex OLDP,\s+16, replace_matched begin ZDP0,8,ZDP1,8, end;
+
+into device label ECDV code_regex PTP2,\s+16, replace_matched begin PTPX,8,PTPY,8, end;
+
+
+into device label ECDV code_regex RMT2,\s+16, replace_matched begin RMTX,8,RMTY,8, end;
+
+into device label ECDV code_regex TSW0,\s+16, replace_matched begin TSWA,8,TSWB,8, end;
+
+into device label ECDV code_regex TSW1,\s+16, replace_matched begin TSWC,8,TSWD,8, end;
+
+into device label ECDV code_regex TSW3,\s+16, replace_matched begin TSWE,8,TSWF,8, end;
+
+into device label ECDV code_regex TSW4,\s+16, replace_matched begin TSWG,8,TSWH,8, end;
+
+into device label ECDV code_regex TSW5,\s+16, replace_matched begin TSWI,8,TSWJ,8, end;
+
+
+into device label ECDV code_regex AMPR,\s+16, replace_matched begin ZPR0,8,ZPR1,8, end;
+
+into device label ECDV code_regex WTP3,\s+16, replace_matched begin WTPX,8,WTPY,8, end;
+
+into device label ECDV code_regex BATR,\s+16, replace_matched begin ZBAX,8,ZBAY,8, end;
+
+into device label ECDV code_regex LSCT,\s+16, replace_matched begin ZCT0,8,ZCT1,8, end;
+
+into device label ECDV code_regex XFNW,\s+24, replace_matched begin ZNW0,8,ZNW1,8,ZNW2,8, end;
+
+into device label ECDV code_regex (PWMV,)\s+(128) replace_matched begin ZWMV,%2,//%1%2 end;
+
+
+into method label _BIF code_regex B1DC replaceall_matched begin B1B2(ZDC0,ZDC1) end;
+into method label _BIF code_regex B1FC replaceall_matched begin B1B2(ZFC0,ZFC1) end;
+into method label _BST code_regex B1FC replaceall_matched begin B1B2(ZFC0,ZFC1) end;
+into method label BATS code_regex B1RC replaceall_matched begin B1B2(ZRC0,ZRC1) end;
+into method label _BST code_regex B1RC replaceall_matched begin B1B2(ZRC0,ZRC1) end;
+into method label _BST code_regex B1FV replaceall_matched begin B1B2(ZFV0,ZFV1) end;
+into method label _BIF code_regex B1DG replaceall_matched begin B1B2(ZDG0,ZDG1) end;
+into method label _BST code_regex B1CR replaceall_matched begin B1B2(ZCR0,ZCR1) end;
+#into method label WMBC code_regex RPM1 replaceall_matched begin B1B2(RPMX,RPMY) end;
+#into method label WMBC code_regex RPM2 replaceall_matched begin B1B2(RMPX,RMPY) end;
+
+into method label WMBC code_regex \(\^\^LPCB\.ECDV\.RPM1 replaceall_matched begin (B1B2(\^\^LPCB.ECDV.RPMX,\^\^LPCB.ECDV.RPMY) end;
+into method label WMBC code_regex \(\^\^LPCB\.ECDV\.RPM2 replaceall_matched begin (B1B2(\^\^LPCB.ECDV.RMPX,\^\^LPCB.ECDV.RMPY) end;
+
+into method label WMBC code_regex \(\^\^LPCB\.ECDV\.XFN1 replaceall_matched begin (B1B2(\^\^LPCB.ECDV.XFNX,\^\^LPCB.ECDV.XFNY) end;
+
+
+into method label WMBD code_regex \(\^\^LPCB\.ECDV\.XFNW replaceall_matched begin (B1B3(\^\^LPCB.ECDV.ZNW0,\^\^LPCB.ECDV.ZNW1,\^\^LPCB.ECDV.ZNW2) end;
+into method label WMBD code_regex \,\s+\^\^LPCB\.ECDV\.XFNW replaceall_matched begin , B1B3(\^\^LPCB.ECDV.ZNW0,\^\^LPCB.ECDV.ZNW1,\^\^LPCB.ECDV.ZNW2) end;
+
+
+into method label B1B2 remove_entry;
+into definitionblock code_regex . insert
+begin
+Method (B1B2, 2, NotSerialized) { Return(Or(Arg0, ShiftLeft(Arg1, 8))) }\n
+end;
+
+# add method B1B3
+into method label B1B3 remove_entry;
+into definitionblock code_regex . insert
+begin
+Method (B1B3, 3, NotSerialized)\n
+{\n
+    Store(Arg2, Local0)\n
+    Or(Arg1, ShiftLeft(Local0, 8), Local0)\n
+    Or(Arg0, ShiftLeft(Local0, 8), Local0)\n
+    Return(Local0)\n
+}\n
+end;
+
+# add method B1B4
+into method label B1B4 remove_entry;
+into definitionblock code_regex . insert
+begin
+Method (B1B4, 4, NotSerialized)\n
+{\n
+    Store(Arg3, Local0)\n
+    Or(Arg2, ShiftLeft(Local0, 8), Local0)\n
+    Or(Arg1, ShiftLeft(Local0, 8), Local0)\n
+    Or(Arg0, ShiftLeft(Local0, 8), Local0)\n
+    Return(Local0)\n
+}\n
+end;
