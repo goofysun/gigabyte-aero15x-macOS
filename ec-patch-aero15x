@@ -119,6 +119,8 @@ into device label ECDV code_regex TSW4,\s+16, replace_matched begin TSWG,8,TSWH,
 
 into device label ECDV code_regex TSW5,\s+16, replace_matched begin TSWI,8,TSWJ,8, end;
 
+into device label ECDV code_regex TSW2,\s+16, replace_matched begin TSWK,8,TSWL,8, end;
+
 
 into device label ECDV code_regex AMPR,\s+16, replace_matched begin ZPR0,8,ZPR1,8, end;
 
