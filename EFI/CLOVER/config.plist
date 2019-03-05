@@ -141,6 +141,20 @@
 					R1BJMA==
 					</data>
 				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>change ECAV TO EC</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>
+					RUNEVg==
+					</data>
+					<key>Replace</key>
+					<data>
+					RUNfXw==
+					</data>
+				</dict>
 			</array>
 			<key>ReuseFFFF</key>
 			<false/>
@@ -198,7 +212,7 @@
 	<key>Boot</key>
 	<dict>
 		<key>Arguments</key>
-		<string>ngfxcompat=1 slide=0 brcmfx-country=#a dart=0 darkwake=no -v -alcbeta</string>
+		<string>ngfxcompat=1 slide=0 brcmfx-country=#a dart=0 darkwake=no -v -alcbeta -igfxcflbklt applbkl=0 </string>
 		<key>Debug</key>
 		<false/>
 		<key>DefaultVolume</key>
@@ -237,7 +251,7 @@
 			<true/>
 		</dict>
 		<key>SetIntelBacklight</key>
-		<false/>
+		<true/>
 		<key>SetIntelMaxBacklight</key>
 		<false/>
 		<key>USB</key>
@@ -250,7 +264,7 @@
 			<true/>
 		</dict>
 		<key>UseIntelHDMI</key>
-		<true/>
+		<false/>
 	</dict>
 	<key>GUI</key>
 	<dict>
@@ -296,9 +310,7 @@
 		<key>EDID</key>
 		<dict>
 			<key>Inject</key>
-			<true/>
-			<key>ProductID</key>
-			<string>0x9c7c</string>
+			<false/>
 		</dict>
 		<key>Inject</key>
 		<dict>
@@ -309,8 +321,6 @@
 			<key>NVidia</key>
 			<false/>
 		</dict>
-		<key>ig-platform-id</key>
-		<string>0x3E9B0000</string>
 	</dict>
 	<key>KernelAndKextPatches</key>
 	<dict>

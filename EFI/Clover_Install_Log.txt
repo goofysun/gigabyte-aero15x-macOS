@@ -1,44 +1,35 @@
 
-Clover EFI installer log - Mon Feb 11 21:21:10 PST 2019
-Installer version: v2.4k r4871 EFI bootloader
+Clover EFI installer log - Tue Mar  5 12:10:48 CST 2019
+Installer version: v2.4k r4895 EFI bootloader
 ======================================================
 /dev/disk0 (internal):
    #:                       TYPE NAME                    SIZE       IDENTIFIER
-   0:      GUID_partition_scheme                         512.1 GB   disk0
+   0:      GUID_partition_scheme                         1.0 TB     disk0
    1:                        EFI EFI                     209.7 MB   disk0s1
-   2:                 Apple_APFS Container disk2         511.9 GB   disk0s2
+   2:         Microsoft Reserved                         16.8 MB    disk0s2
+   3:       Microsoft Basic Data                         512.0 GB   disk0s3
+   4:       Microsoft Basic Data EFIMAC                  463.5 MB   disk0s4
+   5:                 Apple_APFS Container disk1         511.5 GB   disk0s5
 
-/dev/disk1 (internal):
+/dev/disk1 (synthesized):
    #:                       TYPE NAME                    SIZE       IDENTIFIER
-   0:      GUID_partition_scheme                         512.1 GB   disk1
-   1:                        EFI SYSTEM                  314.6 MB   disk1s1
-   2:         Microsoft Reserved                         134.2 MB   disk1s2
-   3:       Microsoft Basic Data Windows                 294.9 GB   disk1s3
-   4:           Windows Recovery                         943.7 MB   disk1s4
-   5:       Microsoft Basic Data DATA                    196.2 GB   disk1s5
+   0:      APFS Container Scheme -                      +511.5 GB   disk1
+                                 Physical Store disk0s5
+   1:                APFS Volume MAC                     43.2 GB    disk1s1
+   2:                APFS Volume Preboot                 45.2 MB    disk1s2
+   3:                APFS Volume Recovery                517.0 MB   disk1s3
+   4:                APFS Volume VM                      17.2 GB    disk1s4
+   5:                APFS Volume MACDaTa                 58.8 GB    disk1s5
 
-/dev/disk2 (synthesized):
-   #:                       TYPE NAME                    SIZE       IDENTIFIER
-   0:      APFS Container Scheme -                      +511.9 GB   disk2
-                                 Physical Store disk0s2
-   1:                APFS Volume MAC                     20.2 GB    disk2s1
-   2:                APFS Volume Preboot                 336.9 MB   disk2s2
-   3:                APFS Volume Recovery                5.1 GB     disk2s3
-   4:                APFS Volume VM                      8.6 GB     disk2s4
-   5:                APFS Volume MACData                 183.1 GB   disk2s5
-
-Target volume /Volumes/MAC on disk2 is APFS on physical store disk0s2
 ======================================================
 Backing up EFI files
 
-Backing up /Volumes/MAC/EFIROOTDIR/EFI folder to /Volumes/MAC/EFI-Backups/r4558/2019-02-11-21h21/EFI
+Backing up /Volumes/EFIMAC/EFIROOTDIR/EFI folder to /Volumes/EFIMAC/EFI-Backups/r4871/2019-03-05-12h10/EFI
 ======================================================
 Installing BootSectors/BootLoader
 
-Stage 0 - Don't write any of boot0af, boot0md, boot0ss to /
-Stage 1 - Don't write any of boot1h2, boot1f32alt, boot1xalt to /
-
-Removing drivers64UEFI/VBoxHfs-64.efi driver because HFSPlus driver present
+Stage 0 - Don't write any of boot0af, boot0md, boot0ss to /Volumes/EFIMAC
+Stage 1 - Don't write any of boot1h2, boot1f32alt, boot1xalt to /Volumes/EFIMAC
 
 ======================================================
 =========== Clover EFI Installation Finish ===========
