@@ -152,7 +152,7 @@ into method label WMBC code_regex \(\^\^LPCB\.ECDV\.RPM2 replaceall_matched begi
 into method label WMBC code_regex \(\^\^LPCB\.ECDV\.XFN1 replaceall_matched begin (B1B2(\^\^LPCB.ECDV.XFNX,\^\^LPCB.ECDV.XFNY) end;
 
 
-into method label WMBD code_regex \(\^\^LPCB\.ECDV\.XFNW replaceall_matched begin (B1B3(\^\^LPCB.ECDV.ZNW0,\^\^LPCB.ECDV.ZNW1,\^\^LPCB.ECDV.ZNW2) end;
+into method label WMBD code_regex \^\^LPCB\.ECDV\.XFNW replaceall_matched begin B1B3(\^\^LPCB.ECDV.ZNW0,\^\^LPCB.ECDV.ZNW1,\^\^LPCB.ECDV.ZNW2) end;
 into method label WMBD code_regex \,\s+\^\^LPCB\.ECDV\.XFNW replaceall_matched begin , B1B3(\^\^LPCB.ECDV.ZNW0,\^\^LPCB.ECDV.ZNW1,\^\^LPCB.ECDV.ZNW2) end;
 
 

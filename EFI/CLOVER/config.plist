@@ -43,7 +43,7 @@
 					<key>Comment</key>
 					<string>change _OSI to XOSI</string>
 					<key>Disabled</key>
-					<false/>
+					<true/>
 					<key>Find</key>
 					<data>
 					X09TSQ==
@@ -85,7 +85,7 @@
 					<key>Comment</key>
 					<string>change HECI to IMEI</string>
 					<key>Disabled</key>
-					<false/>
+					<true/>
 					<key>Find</key>
 					<data>
 					SEVDSQ==
@@ -99,7 +99,7 @@
 					<key>Comment</key>
 					<string>change MEI to IMEI</string>
 					<key>Disabled</key>
-					<false/>
+					<true/>
 					<key>Find</key>
 					<data>
 					TUVJXw==
@@ -145,7 +145,7 @@
 					<key>Comment</key>
 					<string>change ECAV TO EC</string>
 					<key>Disabled</key>
-					<false/>
+					<true/>
 					<key>Find</key>
 					<data>
 					RUNEVg==
@@ -153,6 +153,76 @@
 					<key>Replace</key>
 					<data>
 					RUNfXw==
+					</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>METHOD BATS TO XATS</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>
+					JkJBVFM=
+					</data>
+					<key>Replace</key>
+					<data>
+					JlhBVFM=
+					</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>change _BST to XBST in bat1</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>
+					X0JTVA==
+					</data>
+					<key>Replace</key>
+					<data>
+					WEJTVA==
+					</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>change _BIF to XBIF in bat1</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>
+					X0JJRg==
+					</data>
+					<key>Replace</key>
+					<data>
+					WEJJRg==
+					</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>wmbc  to xmbc</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>
+					T09XTUJDCwg=
+					</data>
+					<key>Replace</key>
+					<data>
+					T09YTUJDCwg=
+					</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>WMBD TO XMBD</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>
+					V01CRA==
+					</data>
+					<key>Replace</key>
+					<data>
+					WE1CRA==
 					</data>
 				</dict>
 			</array>
@@ -176,6 +246,10 @@
 			<dict>
 				<key>Signature</key>
 				<string>DMAR</string>
+			</dict>
+			<dict>
+				<key>Signature</key>
+				<string>MCFG</string>
 			</dict>
 		</array>
 		<key>FixHeaders</key>
@@ -205,14 +279,14 @@
 				<key>PStates</key>
 				<false/>
 				<key>PluginType</key>
-				<false/>
+				<true/>
 			</dict>
 		</dict>
 	</dict>
 	<key>Boot</key>
 	<dict>
 		<key>Arguments</key>
-		<string>ngfxcompat=1 slide=0 brcmfx-country=#a dart=0 darkwake=no -v -alcbeta -igfxcflbklt applbkl=0 </string>
+		<string>ngfxcompat=1 slide=0 brcmfx-country=#a dart=0 darkwake=8 -v -alcbeta #-igfxcflbklt applbkl=0 abm_firstpolldelay=2000</string>
 		<key>Debug</key>
 		<false/>
 		<key>DefaultVolume</key>
@@ -237,7 +311,7 @@
 		<key>HWPEnable</key>
 		<true/>
 		<key>UseARTFrequency</key>
-		<false/>
+		<true/>
 	</dict>
 	<key>Devices</key>
 	<dict>
@@ -259,6 +333,8 @@
 			<key>AddClockID</key>
 			<true/>
 			<key>FixOwnership</key>
+			<true/>
+			<key>HighCurrent</key>
 			<true/>
 			<key>Inject</key>
 			<true/>
@@ -325,8 +401,6 @@
 	<key>KernelAndKextPatches</key>
 	<dict>
 		<key>AppleIntelCPUPM</key>
-		<false/>
-		<key>AppleRTC</key>
 		<false/>
 		<key>Debug</key>
 		<false/>
@@ -568,6 +642,144 @@ Replace:    41be0f00 0000eb44
 				<key>Replace</key>
 				<data>
 				SU9LaXM=
+				</data>
+			</dict>
+			<dict>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>
+				g/sPD4OPBAAA
+				</data>
+				<key>InfoPlistPatch</key>
+				<false/>
+				<key>MatchOS</key>
+				<string>10.14.1</string>
+				<key>Name</key>
+				<string>com.apple.driver.usb.AppleUSBXHCI</string>
+				<key>Replace</key>
+				<data>
+				g/sPkJCQkJCQ
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>USB Port Limit Patch 1 ©ydeng</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>
+				g/sPD4cWBAA=
+				</data>
+				<key>InfoPlistPatch</key>
+				<false/>
+				<key>MatchOS</key>
+				<string>10.14.3</string>
+				<key>Name</key>
+				<string>com.apple.iokit.IOUSBHostFamily</string>
+				<key>Replace</key>
+				<data>
+				g/s/D4cWBAA=
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>USB Port Limit Patch 2 ©ydeng</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>
+				g/sPD4OPBAAA
+				</data>
+				<key>InfoPlistPatch</key>
+				<false/>
+				<key>MatchOS</key>
+				<string>10.14.3</string>
+				<key>Name</key>
+				<string> com.apple.driver.usb.AppleUSBXHCI</string>
+				<key>Replace</key>
+				<data>
+				g/s/D4OPBAAA
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>USB Port Limit Patch 3 ©ydeng</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>
+				g+MP0+NBCd8=
+				</data>
+				<key>InfoPlistPatch</key>
+				<false/>
+				<key>MatchOS</key>
+				<string>10.14.3</string>
+				<key>Name</key>
+				<string>com.apple.iokit.IOUSBHostFamily</string>
+				<key>Replace</key>
+				<data>
+				g+M/0+NBCd8=
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>USB Port Limit Patch 1 ©PMHeart</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>
+				g/sPD4cLBAAA
+				</data>
+				<key>InfoPlistPatch</key>
+				<false/>
+				<key>MatchOS</key>
+				<string>10.14.4</string>
+				<key>Name</key>
+				<string>com.apple.iokit.IOUSBHostFamily</string>
+				<key>Replace</key>
+				<data>
+				g/s/D4cLBAAA
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string> USB Port Limit Patch 2 ©PMHeart</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>
+				QYP/Dw+DlAQAAA==
+				</data>
+				<key>InfoPlistPatch</key>
+				<false/>
+				<key>MatchOS</key>
+				<string>10.14.4</string>
+				<key>Name</key>
+				<string>com.apple.driver.usb.AppleUSBXHCI</string>
+				<key>Replace</key>
+				<data>
+				QYP/Pw+DlAQAAA==
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>USB Port Limit Patch 3 ©PMHeart</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>
+				g+MP0+NBCd8=
+				</data>
+				<key>InfoPlistPatch</key>
+				<false/>
+				<key>MatchOS</key>
+				<string>10.14.4</string>
+				<key>Name</key>
+				<string>com.apple.iokit.IOUSBHostFamily</string>
+				<key>Replace</key>
+				<data>
+				g+M/0+NBCd8=
 				</data>
 			</dict>
 		</array>

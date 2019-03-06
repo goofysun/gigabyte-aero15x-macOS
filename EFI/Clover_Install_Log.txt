@@ -1,5 +1,5 @@
 
-Clover EFI installer log - Tue Mar  5 12:10:48 CST 2019
+Clover EFI installer log - Wed Mar  6 19:19:14 CST 2019
 Installer version: v2.4k r4895 EFI bootloader
 ======================================================
 /dev/disk0 (internal):
@@ -15,7 +15,7 @@ Installer version: v2.4k r4895 EFI bootloader
    #:                       TYPE NAME                    SIZE       IDENTIFIER
    0:      APFS Container Scheme -                      +511.5 GB   disk1
                                  Physical Store disk0s5
-   1:                APFS Volume MAC                     43.2 GB    disk1s1
+   1:                APFS Volume MAC                     43.9 GB    disk1s1
    2:                APFS Volume Preboot                 45.2 MB    disk1s2
    3:                APFS Volume Recovery                517.0 MB   disk1s3
    4:                APFS Volume VM                      17.2 GB    disk1s4
@@ -24,12 +24,16 @@ Installer version: v2.4k r4895 EFI bootloader
 ======================================================
 Backing up EFI files
 
-Backing up /Volumes/EFIMAC/EFIROOTDIR/EFI folder to /Volumes/EFIMAC/EFI-Backups/r4871/2019-03-05-12h10/EFI
+Backing up /Volumes/EFIMAC/EFIROOTDIR/EFI folder to /Volumes/EFIMAC/EFI-Backups/r4895/2019-03-06-19h19/EFI
 ======================================================
 Installing BootSectors/BootLoader
 
 Stage 0 - Don't write any of boot0af, boot0md, boot0ss to /Volumes/EFIMAC
 Stage 1 - Don't write any of boot1h2, boot1f32alt, boot1xalt to /Volumes/EFIMAC
+
+Removing drivers64UEFI/SMCHelper-64.efi driver because VirtualSMC driver present
+
+Removing drivers64UEFI/VBoxHfs-64.efi driver because HFSPlus driver present
 
 ======================================================
 =========== Clover EFI Installation Finish ===========
