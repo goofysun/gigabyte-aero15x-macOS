@@ -1,4 +1,4 @@
-# gigabyte-aero15x-macOS
+# gigabyte-aero15x9-macOS
 
 最近换了工作平台，电池驱动不工作比较蛋疼，之前一直用微星的本子，电池都默认驱动的。
 
